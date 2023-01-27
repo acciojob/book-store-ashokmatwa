@@ -18,9 +18,10 @@ public class BookRepository {
         book.setId(id); // l
 
         dbBook.put(id, book);
-        Book b = dbBook.get(id);
+//        Book b = dbBook.get(id);
         id++;
-        return b;
+//        return b;
+        return book;
         //return dbBook.get(--id);
     }
 

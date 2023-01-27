@@ -47,12 +47,12 @@ public class BookController {
     @DeleteMapping("/books/delete-book-by-id/{id}")
     public ResponseEntity deleteBookById(@PathVariable("id") String id){
         bookService.deleteBookById(id);
-        return  new ResponseEntity<>("deleted", HttpStatus.FOUND);
+        return  new ResponseEntity<>("success ", HttpStatus.FOUND);
     }
 
     @DeleteMapping("/books/delete-all-books")
     public ResponseEntity deleteAllBooks(){
         bookService.deleteAllBooks();
-        return new ResponseEntity<>("deleted", HttpStatus.FOUND);
+        return new ResponseEntity<>("success ", HttpStatus.FOUND);
     }
 }

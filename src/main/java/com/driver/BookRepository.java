@@ -16,9 +16,12 @@ public class BookRepository {
 
     public Book save(Book book){
         book.setId(id); // l
+
         dbBook.put(id, book);
+        Book b = dbBook.get(id);
         id++;
-        return dbBook.get(--id);
+        return b;
+        //return dbBook.get(--id);
     }
 
     public Book findBookById(int id){
@@ -51,6 +54,7 @@ public class BookRepository {
     }
 
     public void deleteBookById(int id){
+//        if(dbBook.containsKey(id));
         dbBook.remove(id);
     }
 

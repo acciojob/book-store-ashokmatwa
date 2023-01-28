@@ -11,11 +11,11 @@ public class Book {
 
      }
 
-     public Book(String name, String genre, String author) {
-          this.name = name;
-          this.author = author;
-          this.genre = genre;
-     }
+//     public Book(String name, String genre, String author) {
+//          this.name = name;
+//          this.author = author;
+//          this.genre = genre;
+//     }
 
      public Book(int id, String name, String genre, String author) {
           this.name = name;
